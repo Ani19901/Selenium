@@ -1,0 +1,43 @@
+10:31:40.468 INFO Test execution started: demo_test
+10:31:40.468 INFO Browser: chrome
+10:31:40.469 INFO Environment: testenv
+10:31:40.469 INFO Using data:
+    url: http://automationpractice.com/index.php?controller=authentication&back=my-account
+10:31:40.474 INFO Store value 'http://automationpractice.com/index.php?controller=authentication&back=my-account' in key 'url'
+10:31:40.474 INFO Store value 'golem_demo@mailinator.com' in key 'login_name'
+10:31:40.475 INFO Store value 'Volo2020' in key 'user_pass'
+10:31:40.475 INFO Store value 'Golem Demo' in key 'account_name'
+10:31:40.476 INFO Test started: test
+10:31:40.477 INFO _____________Navigation_______________
+10:31:40.477 INFO Navigate to: 'http://automationpractice.com/index.php?controller=authentication&back=my-account'
+10:31:42.282 INFO _____________Sign in_______________
+10:31:42.282 INFO Wait for element ('xpath', './/*[@id="email"]', 'Email address input') to be present
+10:31:47.482 ERROR TimeoutException: Message: timeout waiting for element ('xpath', './/*[@id="email"]', 'Email address input') to be present
+
+Traceback (most recent call last):
+  File "d:\demo_golem\env\lib\site-packages\golem\webdriver\extended_driver.py", line 422, in wait_for_element_present
+    self.find(element, timeout=timeout, wait_displayed=False)
+  File "d:\demo_golem\env\lib\site-packages\golem\webdriver\extended_driver.py", line 178, in find
+    xpath, tag_name, timeout, wait_displayed, highlight)
+  File "d:\demo_golem\env\lib\site-packages\golem\webdriver\common.py", line 131, in _find
+    timeout, wait_displayed, highlight)
+  File "d:\demo_golem\env\lib\site-packages\golem\webdriver\common.py", line 47, in _find_webelement
+    .format(element_name, selector_type, selector_value))
+golem.core.exceptions.ElementNotFound: Element Email address input not found using selector xpath:'.//*[@id="email"]'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\demo_golem\env\lib\site-packages\golem\test_runner\test_runner.py", line 202, in run_test_function
+    f(execution.data)
+  File "D:\demo_golem\lesson11\projects\demo_project\tests\demo_test.py", line 24, in test
+    sign_in.login_as_a_user_by_name_and_pass(data.login_name, data.user_pass)
+  File "D:\demo_golem\lesson11\projects\demo_project\pages\sign_in.py", line 9, in login_as_a_user_by_name_and_pass
+    actions.wait_for_element_present(email_address_input, 5)
+  File "d:\demo_golem\env\lib\site-packages\golem\actions.py", line 2569, in wait_for_element_present
+    get_browser().wait_for_element_present(element, timeout)
+  File "d:\demo_golem\env\lib\site-packages\golem\webdriver\extended_driver.py", line 426, in wait_for_element_present
+    raise TimeoutException(message)
+selenium.common.exceptions.TimeoutException: Message: timeout waiting for element ('xpath', './/*[@id="email"]', 'Email address input') to be present
+10:31:47.700 INFO Test Result: CODE ERROR
+10:31:47.703 INFO _____________Sing out and check_______________

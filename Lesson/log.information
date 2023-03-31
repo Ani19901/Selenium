@@ -1,0 +1,42 @@
+2021-12-18 10:49:14 - INFO - 
+
+2021-12-18 10:49:14 - INFO - ====== WebDriver manager ======
+2021-12-18 10:49:14 - INFO - Current google-chrome version is 96.0.4664
+2021-12-18 10:49:14 - INFO - Get LATEST chromedriver version for 96.0.4664 google-chrome
+2021-12-18 10:49:15 - INFO - Trying to download new driver from https://chromedriver.storage.googleapis.com/96.0.4664.45/chromedriver_win32.zip
+2021-12-18 10:49:17 - INFO - Driver has been saved in cache [C:\Users\Ani\.wdm\drivers\chromedriver\win32\96.0.4664.45]
+2021-12-18 10:49:23 - INFO - The assertion is passed
+2021-12-18 10:49:27 - INFO - Test for the ChromeDriver
+2021-12-18 10:49:27 - INFO - 
+
+2021-12-18 10:49:27 - INFO - ====== WebDriver manager ======
+2021-12-18 10:49:28 - INFO - Current firefox version is 94.0
+2021-12-18 10:49:28 - INFO - Get LATEST geckodriver version for 94.0 firefox
+2021-12-18 10:49:28 - INFO - Getting latest mozilla release info for v0.30.0
+2021-12-18 10:49:29 - INFO - Trying to download new driver from https://github.com/mozilla/geckodriver/releases/download/v0.30.0/geckodriver-v0.30.0-win64.zip
+2021-12-18 10:49:30 - INFO - Driver has been saved in cache [C:\Users\Ani\.wdm\drivers\geckodriver\win64\v0.30.0]
+2021-12-18 10:49:40 - ERROR - Validation is failed 
+ Message: Browsing context has been discarded
+
+2023-03-23 12:12:56 - INFO - 
+
+2023-03-23 12:12:56 - INFO - ====== WebDriver manager ======
+2023-03-23 12:12:56 - INFO - Current google-chrome version is 111.0.5563
+2023-03-23 12:12:56 - INFO - Get LATEST chromedriver version for 111.0.5563 google-chrome
+2023-03-23 12:12:56 - INFO - There is no [win32] chromedriver for browser  in cache
+2023-03-23 12:12:56 - INFO - Trying to download new driver from https://chromedriver.storage.googleapis.com/111.0.5563.64/chromedriver_win32.zip
+2023-03-23 12:12:59 - INFO - Driver has been saved in cache [C:\Users\Ani\.wdm\drivers\chromedriver\win32\111.0.5563.64]
+2023-03-23 12:13:04 - INFO - The assertion is passed
+2023-03-23 12:13:08 - INFO - Test for the ChromeDriver
+2023-03-23 12:13:08 - INFO - 
+
+2023-03-23 12:13:08 - INFO - ====== WebDriver manager ======
+2023-03-23 12:13:09 - INFO - Current firefox version is 98.0
+2023-03-23 12:13:09 - INFO - Get LATEST geckodriver version for 98.0 firefox
+2023-03-23 12:13:09 - INFO - There is no [win64] geckodriver for browser  in cache
+2023-03-23 12:13:09 - INFO - Getting latest mozilla release info for v0.32.2
+2023-03-23 12:13:09 - INFO - Trying to download new driver from https://github.com/mozilla/geckodriver/releases/download/v0.32.2/geckodriver-v0.32.2-win64.zip
+2023-03-23 12:13:10 - INFO - Driver has been saved in cache [C:\Users\Ani\.wdm\drivers\geckodriver\win64\v0.32.2]
+2023-03-23 12:13:13 - ERROR - Validation is failed 
+ Message: Process unexpectedly closed with status 0
+

@@ -1,0 +1,25 @@
+1639750341.468588 - INFO - 
+
+1639750341.468588 - INFO - ====== WebDriver manager ======
+1639750341.491755 - INFO - Current google-chrome version is 96.0.4664
+1639750341.492751 - INFO - Get LATEST chromedriver version for 96.0.4664 google-chrome
+1639750341.752827 - INFO - Trying to download new driver from https://chromedriver.storage.googleapis.com/96.0.4664.45/chromedriver_win32.zip
+1639750343.499729 - INFO - Driver has been saved in cache [C:\Users\Ani\.wdm\drivers\chromedriver\win32\96.0.4664.45]
+1639810206.361671 - INFO - 
+
+1639810206.361671 - INFO - ====== WebDriver manager ======
+1639810206.410629 - INFO - Current google-chrome version is 96.0.4664
+1639810206.411242 - INFO - Get LATEST chromedriver version for 96.0.4664 google-chrome
+1639810206.825033 - INFO - Driver [C:\Users\Ani\.wdm\drivers\chromedriver\win32\96.0.4664.45\chromedriver.exe] found in cache
+1639810361.106745 - INFO - 
+
+1639810361.107684 - INFO - ====== WebDriver manager ======
+1639810361.180465 - INFO - Current google-chrome version is 96.0.4664
+1639810361.180465 - INFO - Get LATEST chromedriver version for 96.0.4664 google-chrome
+1639810361.607335 - INFO - Driver [C:\Users\Ani\.wdm\drivers\chromedriver\win32\96.0.4664.45\chromedriver.exe] found in cache
+1639810387.658510 - INFO - 
+
+1639810387.658510 - INFO - ====== WebDriver manager ======
+1639810387.707138 - INFO - Current google-chrome version is 96.0.4664
+1639810387.707138 - INFO - Get LATEST chromedriver version for 96.0.4664 google-chrome
+1639810388.096103 - INFO - Driver [C:\Users\Ani\.wdm\drivers\chromedriver\win32\96.0.4664.45\chromedriver.exe] found in cache

@@ -1,0 +1,75 @@
+1636279291027	geckodriver	INFO	Listening on 127.0.0.1:60949
+1636279293080	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Ani\\AppData\\Local\\Temp\\rust_mozprofileA9wRsF"
+1636279293784	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Ani\\AppData\\Local\\Temp\\rust_mozprofileA9wRsF\\search.json.mozlz4", (void 0)))
+1636279296814	Marionette	INFO	Listening on port 60956
+1636279297307	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/FormValidationChild.jsm, line 177: TypeError: this._element is null
+JavaScript error: resource:///actors/FormValidationChild.jsm, line 177: TypeError: this._element is null
+1636279302460	Marionette	INFO	Stopped listening on port 60956
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1638342320659	geckodriver	INFO	Listening on 127.0.0.1:53121
+1638342322716	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Ani\\AppData\\Local\\Temp\\rust_mozprofile6uqf7o"
+1638342323417	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Ani\\AppData\\Local\\Temp\\rust_mozprofile6uqf7o\\search.json.mozlz4", (void 0)))
+1638342326025	Marionette	INFO	Listening on port 53129
+1638342326443	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/FormValidationChild.jsm, line 177: TypeError: this._element is null
+JavaScript error: resource:///actors/FormValidationChild.jsm, line 177: TypeError: this._element is null
+1638342331620	Marionette	INFO	Stopped listening on port 53129
+1638342714436	geckodriver	INFO	Listening on 127.0.0.1:53443
+1638342716483	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Ani\\AppData\\Local\\Temp\\rust_mozprofilewW5Hxd"
+1638342716857	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Ani\\AppData\\Local\\Temp\\rust_mozprofilewW5Hxd\\search.json.mozlz4", (void 0)))
+1638342719037	Marionette	INFO	Listening on port 53450
+1638342719172	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/FormValidationChild.jsm, line 177: TypeError: this._element is null
+JavaScript error: resource:///actors/FormValidationChild.jsm, line 177: TypeError: this._element is null
+1638342723965	Marionette	INFO	Stopped listening on port 53450
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1638342921413	geckodriver	INFO	Listening on 127.0.0.1:53713
+1638342923458	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Ani\\AppData\\Local\\Temp\\rust_mozprofile3G3aaT"
+1638342923832	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Ani\\AppData\\Local\\Temp\\rust_mozprofile3G3aaT\\search.json.mozlz4", (void 0)))
+1638342926038	Marionette	INFO	Listening on port 53721
+1638342926135	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/FormValidationChild.jsm, line 177: TypeError: this._element is null
+JavaScript error: resource:///actors/FormValidationChild.jsm, line 177: TypeError: this._element is null
+1638342931047	Marionette	INFO	Stopped listening on port 53721
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1638342980226	geckodriver	INFO	Listening on 127.0.0.1:53925
+1638342982277	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Ani\\AppData\\Local\\Temp\\rust_mozprofileDXrKxq"
+1638342982644	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Ani\\AppData\\Local\\Temp\\rust_mozprofileDXrKxq\\search.json.mozlz4", (void 0)))
+1638342984771	Marionette	INFO	Listening on port 53933
+1638342984965	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/FormValidationChild.jsm, line 177: TypeError: this._element is null
+JavaScript error: resource:///actors/FormValidationChild.jsm, line 177: TypeError: this._element is null
+1638342989813	Marionette	INFO	Stopped listening on port 53933
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1639810170813	geckodriver	INFO	Listening on 127.0.0.1:50432
+1639810172840	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Ani\\AppData\\Local\\Temp\\rust_mozprofilefNUZfI"
+1639810174124	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\Ani\\AppData\\Local\\Temp\\rust_mozprofilefNUZfI\\search.json.mozlz4", (void 0)))
+1639810179177	Marionette	INFO	Listening on port 50439
+1639810179292	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1639810180293	Marionette	INFO	Stopped listening on port 50439
+console.error: services.settings: 
+  main/partitioning-exempt-urls Signature failed  TypeError: NetworkError: Network request failed
+console.error: services.settings: 
+  main/query-stripping Signature failed  TypeError: NetworkError: Network request failed
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1679559191141	geckodriver	INFO	Listening on 127.0.0.1:63889
+1679559193195	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\Ani\\AppData\\Local\\Temp\\rust_mozprofileDFIcHe"

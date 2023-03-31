@@ -1,0 +1,356 @@
+2021-12-07 10:43:55,790 root INFO Test execution started: demo_test
+2021-12-07 10:43:55,791 root INFO Browser: chrome
+2021-12-07 10:43:55,792 root INFO Environment: testenv
+2021-12-07 10:43:55,793 root INFO Using data:
+    user_name: second_user_for_demo
+    url: http://automationpractice.com/index.php?controller=authentication&back=my-account
+2021-12-07 10:43:55,802 root INFO Store value 'http://automationpractice.com/index.php?controller=authentication&back=my-account' in key 'url'
+2021-12-07 10:43:55,803 root INFO Store value 'golem_demo_2@mailinator.com' in key 'login_name'
+2021-12-07 10:43:55,803 root INFO Store value 'Volo2020' in key 'user_pass'
+2021-12-07 10:43:55,804 root INFO Store value 'sGolem Demo' in key 'account_name'
+2021-12-07 10:43:55,805 root INFO Test started: test
+2021-12-07 10:43:55,806 root INFO _____________Navigation_______________
+2021-12-07 10:43:55,807 root INFO Navigate to: 'http://automationpractice.com/index.php?controller=authentication&back=my-account'
+2021-12-07 10:43:56,346 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": ["start-maximized"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": ["start-maximized"]}}}
+2021-12-07 10:43:56,348 urllib3.connectionpool DEBUG Starting new HTTP connection (1): 127.0.0.1:62106
+2021-12-07 10:43:57,194 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session HTTP/1.1" 200 793
+2021-12-07 10:43:57,195 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:43:57,195 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/window/maximize {}
+2021-12-07 10:43:57,199 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/window/maximize HTTP/1.1" 200 52
+2021-12-07 10:43:57,200 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:43:57,200 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/url {"url": "http://automationpractice.com/index.php?controller=authentication&back=my-account"}
+2021-12-07 10:44:07,213 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/url HTTP/1.1" 200 14
+2021-12-07 10:44:07,213 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:07,213 root INFO _____________Sign in_______________
+2021-12-07 10:44:07,214 root INFO Wait for element ('xpath', './/*[@id="email"]', 'Email address input') to be present
+2021-12-07 10:44:07,214 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"email\"]"}
+2021-12-07 10:44:07,239 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 200 88
+2021-12-07 10:44:07,239 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:07,239 root DEBUG Element found
+2021-12-07 10:44:07,239 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"email\"]"}
+2021-12-07 10:44:07,260 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 200 88
+2021-12-07 10:44:07,261 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:07,261 root DEBUG Element found
+2021-12-07 10:44:07,261 root INFO Write 'golem_demo_2@mailinator.com' in element Email address input
+2021-12-07 10:44:07,261 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element/39888da9-6b5a-457b-949d-58cbdced89b1/value {"text": "golem_demo_2@mailinator.com", "value": ["g", "o", "l", "e", "m", "_", "d", "e", "m", "o", "_", "2", "@", "m", "a", "i", "l", "i", "n", "a", "t", "o", "r", ".", "c", "o", "m"], "id": "39888da9-6b5a-457b-949d-58cbdced89b1"}
+2021-12-07 10:44:07,400 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element/39888da9-6b5a-457b-949d-58cbdced89b1/value HTTP/1.1" 200 14
+2021-12-07 10:44:07,400 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:07,400 root INFO Wait for element ('xpath', './/*[@id="passwd"]', 'Password input input') to be present
+2021-12-07 10:44:07,407 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"passwd\"]"}
+2021-12-07 10:44:07,418 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 200 88
+2021-12-07 10:44:07,418 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:07,419 root DEBUG Element found
+2021-12-07 10:44:07,419 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"passwd\"]"}
+2021-12-07 10:44:07,427 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 200 88
+2021-12-07 10:44:07,428 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:07,428 root DEBUG Element found
+2021-12-07 10:44:07,428 root INFO Write 'Volo2020' in element Password input input
+2021-12-07 10:44:07,429 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element/ad7a7b18-efc5-43c3-8f26-50e643a27c3c/value {"text": "Volo2020", "value": ["V", "o", "l", "o", "2", "0", "2", "0"], "id": "ad7a7b18-efc5-43c3-8f26-50e643a27c3c"}
+2021-12-07 10:44:07,498 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element/ad7a7b18-efc5-43c3-8f26-50e643a27c3c/value HTTP/1.1" 200 14
+2021-12-07 10:44:07,498 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:07,498 root INFO Wait for element ('xpath', './/*[@id="SubmitLogin"]', 'Sign in button') to be present
+2021-12-07 10:44:07,499 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:07,510 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 200 88
+2021-12-07 10:44:07,510 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:07,511 root DEBUG Element found
+2021-12-07 10:44:07,511 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:07,516 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 200 88
+2021-12-07 10:44:07,516 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:07,516 root DEBUG Element found
+2021-12-07 10:44:07,516 root INFO Click Sign in button
+2021-12-07 10:44:07,517 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element/ffe34596-2879-4e18-a60b-5175f247616b/click {"id": "ffe34596-2879-4e18-a60b-5175f247616b"}
+2021-12-07 10:44:22,398 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element/ffe34596-2879-4e18-a60b-5175f247616b/click HTTP/1.1" 200 14
+2021-12-07 10:44:22,398 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:22,398 root INFO _____________Assert account name_______________
+2021-12-07 10:44:22,399 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@class=\"account\"]/span"}
+2021-12-07 10:44:22,414 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 200 88
+2021-12-07 10:44:22,414 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:22,414 root DEBUG Element found
+2021-12-07 10:44:22,414 root INFO Assert element Account name text is 'sGolem Demo'
+2021-12-07 10:44:22,415 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element/b773b0ba-0a74-4209-a6f2-a2e207eac586/text {"id": "b773b0ba-0a74-4209-a6f2-a2e207eac586"}
+2021-12-07 10:44:22,428 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "GET /session/e4f398c1fb6f4fd8b297d61877156113/element/b773b0ba-0a74-4209-a6f2-a2e207eac586/text HTTP/1.1" 200 23
+2021-12-07 10:44:22,428 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:22,428 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element/b773b0ba-0a74-4209-a6f2-a2e207eac586/text {"id": "b773b0ba-0a74-4209-a6f2-a2e207eac586"}
+2021-12-07 10:44:22,436 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "GET /session/e4f398c1fb6f4fd8b297d61877156113/element/b773b0ba-0a74-4209-a6f2-a2e207eac586/text HTTP/1.1" 200 23
+2021-12-07 10:44:22,436 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:22,437 root INFO Test Result: SUCCESS
+2021-12-07 10:44:22,441 root INFO _____________Sing out and check_______________
+2021-12-07 10:44:22,442 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@class=\"logout\"]"}
+2021-12-07 10:44:22,451 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 200 88
+2021-12-07 10:44:22,451 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:22,451 root DEBUG Element found
+2021-12-07 10:44:22,451 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@class=\"logout\"]"}
+2021-12-07 10:44:22,459 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 200 88
+2021-12-07 10:44:22,459 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:22,459 root DEBUG Element found
+2021-12-07 10:44:22,459 root INFO Click Logout button
+2021-12-07 10:44:22,459 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element/2914ced0-f6c2-4dd4-8618-e8b16fca39d6/click {"id": "2914ced0-f6c2-4dd4-8618-e8b16fca39d6"}
+2021-12-07 10:44:36,172 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element/2914ced0-f6c2-4dd4-8618-e8b16fca39d6/click HTTP/1.1" 200 14
+2021-12-07 10:44:36,172 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:36,172 root INFO Wait for element ('xpath', './/*[@id="SubmitLogin"]', 'Sign in button') to be present
+2021-12-07 10:44:36,174 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:36,188 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:36,188 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:36,695 root DEBUG Element not found yet, remaining time: 29.48
+2021-12-07 10:44:36,695 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:36,718 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:36,719 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:37,226 root DEBUG Element not found yet, remaining time: 28.95
+2021-12-07 10:44:37,226 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:37,234 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:37,235 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:37,737 root DEBUG Element not found yet, remaining time: 28.44
+2021-12-07 10:44:37,737 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:37,746 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:37,746 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:38,248 root DEBUG Element not found yet, remaining time: 27.93
+2021-12-07 10:44:38,248 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:38,269 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:38,269 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:38,780 root DEBUG Element not found yet, remaining time: 27.39
+2021-12-07 10:44:38,780 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:38,788 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:38,788 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:39,298 root DEBUG Element not found yet, remaining time: 26.88
+2021-12-07 10:44:39,298 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:39,306 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:39,306 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:39,813 root DEBUG Element not found yet, remaining time: 26.36
+2021-12-07 10:44:39,813 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:39,822 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:39,822 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:40,327 root DEBUG Element not found yet, remaining time: 25.85
+2021-12-07 10:44:40,327 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:40,335 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:40,336 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:40,836 root DEBUG Element not found yet, remaining time: 25.34
+2021-12-07 10:44:40,836 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:40,845 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:40,845 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:41,350 root DEBUG Element not found yet, remaining time: 24.82
+2021-12-07 10:44:41,350 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:41,371 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:41,371 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:41,882 root DEBUG Element not found yet, remaining time: 24.29
+2021-12-07 10:44:41,882 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:41,891 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:41,891 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:42,397 root DEBUG Element not found yet, remaining time: 23.78
+2021-12-07 10:44:42,397 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:42,406 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:42,406 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:42,906 root DEBUG Element not found yet, remaining time: 23.27
+2021-12-07 10:44:42,907 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:42,929 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:42,930 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:43,434 root DEBUG Element not found yet, remaining time: 22.74
+2021-12-07 10:44:43,434 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:43,459 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:43,460 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:43,964 root DEBUG Element not found yet, remaining time: 22.21
+2021-12-07 10:44:43,964 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:43,980 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:43,980 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:44,493 root DEBUG Element not found yet, remaining time: 21.68
+2021-12-07 10:44:44,493 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:44,513 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:44,514 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:45,027 root DEBUG Element not found yet, remaining time: 21.15
+2021-12-07 10:44:45,027 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:45,049 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:45,050 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:45,557 root DEBUG Element not found yet, remaining time: 20.62
+2021-12-07 10:44:45,557 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:45,567 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:45,567 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:46,069 root DEBUG Element not found yet, remaining time: 20.10
+2021-12-07 10:44:46,069 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:46,089 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:46,090 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:46,597 root DEBUG Element not found yet, remaining time: 19.58
+2021-12-07 10:44:46,597 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:46,620 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:46,621 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:47,123 root DEBUG Element not found yet, remaining time: 19.05
+2021-12-07 10:44:47,125 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:47,148 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:47,149 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:47,653 root DEBUG Element not found yet, remaining time: 18.52
+2021-12-07 10:44:47,653 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:47,664 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:47,665 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:48,167 root DEBUG Element not found yet, remaining time: 18.01
+2021-12-07 10:44:48,167 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:48,184 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:48,186 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:48,691 root DEBUG Element not found yet, remaining time: 17.48
+2021-12-07 10:44:48,691 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:48,705 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:48,705 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:49,212 root DEBUG Element not found yet, remaining time: 16.96
+2021-12-07 10:44:49,212 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:49,225 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:49,225 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:49,740 root DEBUG Element not found yet, remaining time: 16.43
+2021-12-07 10:44:49,740 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:49,755 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:49,755 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:50,269 root DEBUG Element not found yet, remaining time: 15.90
+2021-12-07 10:44:50,269 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:50,292 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:50,293 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:50,794 root DEBUG Element not found yet, remaining time: 15.38
+2021-12-07 10:44:50,794 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:50,808 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:50,809 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:51,320 root DEBUG Element not found yet, remaining time: 14.85
+2021-12-07 10:44:51,320 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:51,333 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:51,334 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:51,847 root DEBUG Element not found yet, remaining time: 14.33
+2021-12-07 10:44:51,847 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:51,863 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:51,864 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:52,373 root DEBUG Element not found yet, remaining time: 13.80
+2021-12-07 10:44:52,375 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:52,395 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:52,396 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:52,898 root DEBUG Element not found yet, remaining time: 13.28
+2021-12-07 10:44:52,898 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:52,910 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:52,910 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:53,421 root DEBUG Element not found yet, remaining time: 12.75
+2021-12-07 10:44:53,421 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:53,437 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:53,438 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:53,945 root DEBUG Element not found yet, remaining time: 12.23
+2021-12-07 10:44:53,945 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:53,953 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:53,953 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:54,458 root DEBUG Element not found yet, remaining time: 11.72
+2021-12-07 10:44:54,458 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:54,481 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:54,481 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:54,988 root DEBUG Element not found yet, remaining time: 11.19
+2021-12-07 10:44:54,988 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:55,010 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:55,011 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:55,517 root DEBUG Element not found yet, remaining time: 10.66
+2021-12-07 10:44:55,517 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:55,541 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:55,542 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:56,056 root DEBUG Element not found yet, remaining time: 10.12
+2021-12-07 10:44:56,056 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:56,079 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:56,080 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:56,583 root DEBUG Element not found yet, remaining time: 9.59
+2021-12-07 10:44:56,583 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:56,604 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:56,605 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:57,109 root DEBUG Element not found yet, remaining time: 9.06
+2021-12-07 10:44:57,109 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:57,124 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:57,124 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:57,637 root DEBUG Element not found yet, remaining time: 8.54
+2021-12-07 10:44:57,637 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:57,658 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:57,659 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:58,162 root DEBUG Element not found yet, remaining time: 8.01
+2021-12-07 10:44:58,162 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:58,182 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:58,183 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:58,690 root DEBUG Element not found yet, remaining time: 7.48
+2021-12-07 10:44:58,690 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:58,710 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:58,711 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:59,215 root DEBUG Element not found yet, remaining time: 6.96
+2021-12-07 10:44:59,215 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:59,236 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:59,237 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:44:59,740 root DEBUG Element not found yet, remaining time: 6.43
+2021-12-07 10:44:59,740 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:44:59,762 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:44:59,763 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:45:00,267 root DEBUG Element not found yet, remaining time: 5.91
+2021-12-07 10:45:00,267 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:45:00,289 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:45:00,290 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:45:00,797 root DEBUG Element not found yet, remaining time: 5.38
+2021-12-07 10:45:00,797 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:45:00,806 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:45:00,806 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:45:01,312 root DEBUG Element not found yet, remaining time: 4.86
+2021-12-07 10:45:01,312 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:45:01,320 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:45:01,320 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:45:01,834 root DEBUG Element not found yet, remaining time: 4.34
+2021-12-07 10:45:01,834 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:45:01,840 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:45:01,840 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:45:02,352 root DEBUG Element not found yet, remaining time: 3.82
+2021-12-07 10:45:02,352 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:45:02,360 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:45:02,360 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:45:02,866 root DEBUG Element not found yet, remaining time: 3.31
+2021-12-07 10:45:02,866 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:45:02,874 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:45:02,875 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:45:03,375 root DEBUG Element not found yet, remaining time: 2.80
+2021-12-07 10:45:03,376 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:45:03,396 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:45:03,397 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:45:03,901 root DEBUG Element not found yet, remaining time: 2.27
+2021-12-07 10:45:03,901 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:45:03,926 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:45:03,927 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:45:04,428 root DEBUG Element not found yet, remaining time: 1.75
+2021-12-07 10:45:04,428 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:45:04,452 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:45:04,453 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:45:04,969 root DEBUG Element not found yet, remaining time: 1.20
+2021-12-07 10:45:04,970 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:45:04,988 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:45:04,989 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:45:05,492 root DEBUG Element not found yet, remaining time: 0.68
+2021-12-07 10:45:05,492 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:45:05,514 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:45:05,515 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:45:06,016 root DEBUG Element not found yet, remaining time: 0.16
+2021-12-07 10:45:06,016 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:45:06,036 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:45:06,037 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:45:06,539 root DEBUG Element not found yet, remaining time: -0.37
+2021-12-07 10:45:06,539 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:45:06,559 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "POST /session/e4f398c1fb6f4fd8b297d61877156113/element HTTP/1.1" 404 1033
+2021-12-07 10:45:06,561 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:45:06,564 root ERROR TimeoutException: Message: timeout waiting for element ('xpath', './/*[@id="SubmitLogin"]', 'Sign in button') to be present
+
+Traceback (most recent call last):
+  File "d:\demo_golem\env\lib\site-packages\golem\webdriver\extended_driver.py", line 422, in wait_for_element_present
+    self.find(element, timeout=timeout, wait_displayed=False)
+  File "d:\demo_golem\env\lib\site-packages\golem\webdriver\extended_driver.py", line 178, in find
+    xpath, tag_name, timeout, wait_displayed, highlight)
+  File "d:\demo_golem\env\lib\site-packages\golem\webdriver\common.py", line 131, in _find
+    timeout, wait_displayed, highlight)
+  File "d:\demo_golem\env\lib\site-packages\golem\webdriver\common.py", line 47, in _find_webelement
+    .format(element_name, selector_type, selector_value))
+golem.core.exceptions.ElementNotFound: Element Sign in button not found using selector xpath:'.//*[@id="SubmitLogin"]'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\demo_golem\env\lib\site-packages\golem\test_runner\test_runner.py", line 257, in run_teardown
+    self.test_module.teardown(execution.data)
+  File "D:\demo_golem\lesson11\projects\demo_project\tests\demo_test.py", line 30, in teardown
+    account.user_logout_and_check()
+  File "D:\demo_golem\lesson11\projects\demo_project\pages\account.py", line 16, in user_logout_and_check
+    actions.wait_for_element_present(sign_in_btn)
+  File "d:\demo_golem\env\lib\site-packages\golem\actions.py", line 2569, in wait_for_element_present
+    get_browser().wait_for_element_present(element, timeout)
+  File "d:\demo_golem\env\lib\site-packages\golem\webdriver\extended_driver.py", line 426, in wait_for_element_present
+    raise TimeoutException(message)
+selenium.common.exceptions.TimeoutException: Message: timeout waiting for element ('xpath', './/*[@id="SubmitLogin"]', 'Sign in button') to be present
+2021-12-07 10:45:06,576 root DEBUG cannot take screenshot, report directory does not exist
+2021-12-07 10:45:06,577 selenium.webdriver.remote.remote_connection DEBUG DELETE http://127.0.0.1:62106/session/e4f398c1fb6f4fd8b297d61877156113 {}
+2021-12-07 10:45:06,822 urllib3.connectionpool DEBUG http://127.0.0.1:62106 "DELETE /session/e4f398c1fb6f4fd8b297d61877156113 HTTP/1.1" 200 14
+2021-12-07 10:45:06,822 selenium.webdriver.remote.remote_connection DEBUG Finished Request

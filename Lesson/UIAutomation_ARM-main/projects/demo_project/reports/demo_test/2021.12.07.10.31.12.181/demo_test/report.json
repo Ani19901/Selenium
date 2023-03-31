@@ -1,0 +1,23 @@
+[
+    {
+        "test_file": "demo_test",
+        "test": "setup",
+        "set_name": "",
+        "environment": "testenv",
+        "result": "code error",
+        "description": "",
+        "browser": "",
+        "test_data": {
+            "env": "{'url': 'http://automationpractice.com/index.php?controller=authentication&back=my-account', 'users': {'user_for_demo': {'user_login': 'golem_demo@mailinator.com', 'user_pswd': 'Volo2020', 'user_name': 'Golem Demo'}, 'second_user_for_demo': {'user_login': 'golem_demo_2@mailinator.com', 'user_pswd': 'Volo2020', 'user_name': 'sGolem Demo'}}, 'name': 'testenv'}"
+        },
+        "steps": [],
+        "errors": [
+            {
+                "message": "ModuleNotFoundError: No module named 'lesson11'",
+                "description": "Traceback (most recent call last):\nModuleNotFoundError: No module named 'lesson11'\n"
+            }
+        ],
+        "elapsed_time": null,
+        "timestamp": "2021.12.07.10.31.13.829"
+    }
+]

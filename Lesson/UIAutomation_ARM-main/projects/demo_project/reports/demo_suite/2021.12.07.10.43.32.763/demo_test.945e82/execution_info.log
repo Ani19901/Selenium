@@ -1,0 +1,53 @@
+10:43:55.790 INFO Test execution started: demo_test
+10:43:55.791 INFO Browser: chrome
+10:43:55.792 INFO Environment: testenv
+10:43:55.793 INFO Using data:
+    user_name: second_user_for_demo
+    url: http://automationpractice.com/index.php?controller=authentication&back=my-account
+10:43:55.802 INFO Store value 'http://automationpractice.com/index.php?controller=authentication&back=my-account' in key 'url'
+10:43:55.803 INFO Store value 'golem_demo_2@mailinator.com' in key 'login_name'
+10:43:55.803 INFO Store value 'Volo2020' in key 'user_pass'
+10:43:55.804 INFO Store value 'sGolem Demo' in key 'account_name'
+10:43:55.805 INFO Test started: test
+10:43:55.806 INFO _____________Navigation_______________
+10:43:55.807 INFO Navigate to: 'http://automationpractice.com/index.php?controller=authentication&back=my-account'
+10:44:07.213 INFO _____________Sign in_______________
+10:44:07.214 INFO Wait for element ('xpath', './/*[@id="email"]', 'Email address input') to be present
+10:44:07.261 INFO Write 'golem_demo_2@mailinator.com' in element Email address input
+10:44:07.400 INFO Wait for element ('xpath', './/*[@id="passwd"]', 'Password input input') to be present
+10:44:07.428 INFO Write 'Volo2020' in element Password input input
+10:44:07.498 INFO Wait for element ('xpath', './/*[@id="SubmitLogin"]', 'Sign in button') to be present
+10:44:07.516 INFO Click Sign in button
+10:44:22.398 INFO _____________Assert account name_______________
+10:44:22.414 INFO Assert element Account name text is 'sGolem Demo'
+10:44:22.437 INFO Test Result: SUCCESS
+10:44:22.441 INFO _____________Sing out and check_______________
+10:44:22.459 INFO Click Logout button
+10:44:36.172 INFO Wait for element ('xpath', './/*[@id="SubmitLogin"]', 'Sign in button') to be present
+10:45:06.564 ERROR TimeoutException: Message: timeout waiting for element ('xpath', './/*[@id="SubmitLogin"]', 'Sign in button') to be present
+
+Traceback (most recent call last):
+  File "d:\demo_golem\env\lib\site-packages\golem\webdriver\extended_driver.py", line 422, in wait_for_element_present
+    self.find(element, timeout=timeout, wait_displayed=False)
+  File "d:\demo_golem\env\lib\site-packages\golem\webdriver\extended_driver.py", line 178, in find
+    xpath, tag_name, timeout, wait_displayed, highlight)
+  File "d:\demo_golem\env\lib\site-packages\golem\webdriver\common.py", line 131, in _find
+    timeout, wait_displayed, highlight)
+  File "d:\demo_golem\env\lib\site-packages\golem\webdriver\common.py", line 47, in _find_webelement
+    .format(element_name, selector_type, selector_value))
+golem.core.exceptions.ElementNotFound: Element Sign in button not found using selector xpath:'.//*[@id="SubmitLogin"]'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\demo_golem\env\lib\site-packages\golem\test_runner\test_runner.py", line 257, in run_teardown
+    self.test_module.teardown(execution.data)
+  File "D:\demo_golem\lesson11\projects\demo_project\tests\demo_test.py", line 30, in teardown
+    account.user_logout_and_check()
+  File "D:\demo_golem\lesson11\projects\demo_project\pages\account.py", line 16, in user_logout_and_check
+    actions.wait_for_element_present(sign_in_btn)
+  File "d:\demo_golem\env\lib\site-packages\golem\actions.py", line 2569, in wait_for_element_present
+    get_browser().wait_for_element_present(element, timeout)
+  File "d:\demo_golem\env\lib\site-packages\golem\webdriver\extended_driver.py", line 426, in wait_for_element_present
+    raise TimeoutException(message)
+selenium.common.exceptions.TimeoutException: Message: timeout waiting for element ('xpath', './/*[@id="SubmitLogin"]', 'Sign in button') to be present

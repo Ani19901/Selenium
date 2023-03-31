@@ -1,0 +1,4 @@
+[32mINFO    [0m root:test_logger.py:13 Opening websites home page
+[32mINFO    [0m root:test_logger.py:13 Trying to click login
+[32mINFO    [0m root:test_logger.py:13 Validation Message is - You are logged in as automation20225@gmail.com
+[32mINFO    [0m root:test_logger.py:13 Found elements quantity - '0'

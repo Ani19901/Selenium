@@ -1,0 +1,2 @@
+[32mINFO    [0m root:test_logger.py:13 Opening websites home page
+[32mINFO    [0m root:test_logger.py:13 Trying to click login

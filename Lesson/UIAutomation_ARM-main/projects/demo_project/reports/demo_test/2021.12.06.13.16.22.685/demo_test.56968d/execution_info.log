@@ -1,0 +1,17 @@
+13:16:35.842 INFO Test execution started: demo_test
+13:16:35.859 INFO Browser: firefox
+13:16:35.860 INFO Environment: testenv
+13:16:35.860 INFO Using data:
+    url: http://automationpractice.com/index.php?controller=authentication&back=my-account
+13:16:35.864 INFO Store value 'http://automationpractice.com/index.php?controller=authentication&back=my-account' in key 'url'
+13:16:35.864 INFO Store value 'golem_demo@mailinator.com' in key 'login_name'
+13:16:35.865 INFO Store value 'Volo2020' in key 'user_pass'
+13:16:35.865 INFO Test started: test
+13:16:35.866 INFO Navigate to: 'http://automationpractice.com/index.php?controller=authentication&back=my-account'
+13:16:48.184 INFO Wait for element ('xpath', './/*[@id="email"]', 'Email address input') to be present
+13:16:48.228 INFO Write 'golem_demo@mailinator.com' in element Email address input
+13:16:48.321 INFO Wait for element ('xpath', './/*[@id="passwd"]', 'Password input input') to be present
+13:16:48.382 INFO Write 'Volo2020' in element Password input input
+13:16:48.420 INFO Wait for element ('xpath', './/*[@id="SubmitLogin"]', 'Sign in btn') to be present
+13:16:48.446 INFO Click Sign in btn
+13:16:50.273 INFO Test Result: SUCCESS

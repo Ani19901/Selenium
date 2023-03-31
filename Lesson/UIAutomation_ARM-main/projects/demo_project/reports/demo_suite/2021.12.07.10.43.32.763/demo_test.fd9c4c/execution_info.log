@@ -1,0 +1,40 @@
+10:43:34.551 INFO Test execution started: demo_test
+10:43:34.551 INFO Browser: chrome
+10:43:34.551 INFO Environment: testenv
+10:43:34.553 INFO Using data:
+    user_name: user_for_demo
+    url: http://automationpractice.com/index.php?controller=authentication&back=my-account
+10:43:34.557 INFO Store value 'http://automationpractice.com/index.php?controller=authentication&back=my-account' in key 'url'
+10:43:34.557 INFO Store value 'golem_demo@mailinator.com' in key 'login_name'
+10:43:34.558 INFO Store value 'Volo2020' in key 'user_pass'
+10:43:34.558 INFO Store value 'Golem Demo' in key 'account_name'
+10:43:34.559 INFO Test started: test
+10:43:34.562 INFO _____________Navigation_______________
+10:43:34.563 INFO Navigate to: 'http://automationpractice.com/index.php?controller=authentication&back=my-account'
+10:43:46.235 INFO _____________Sign in_______________
+10:43:46.236 INFO Wait for element ('xpath', './/*[@id="email"]', 'Email address input') to be present
+10:43:46.259 INFO Write 'golem_demo@mailinator.com' in element Email address input
+10:43:46.340 INFO Wait for element ('xpath', './/*[@id="passwd"]', 'Password input input') to be present
+10:43:46.363 INFO Write 'Volo2020' in element Password input input
+10:43:46.430 INFO Wait for element ('xpath', './/*[@id="SubmitLogin"]', 'Sign in button') to be present
+10:43:46.449 INFO Click Sign in button
+10:43:53.052 INFO _____________Assert account name_______________
+10:43:53.073 ERROR ElementNotFound: Element Account name not found using selector xpath:'.//*[@class="account"]/span'
+Traceback (most recent call last):
+  File "d:\demo_golem\env\lib\site-packages\golem\test_runner\test_runner.py", line 202, in run_test_function
+    f(execution.data)
+  File "D:\demo_golem\lesson11\projects\demo_project\tests\demo_test.py", line 25, in test
+    account.assert_account_name(data.account_name)
+  File "D:\demo_golem\lesson11\projects\demo_project\pages\account.py", line 9, in assert_account_name
+    actions.assert_element_text(account_name_span, name)
+  File "d:\demo_golem\env\lib\site-packages\golem\actions.py", line 555, in assert_element_text
+    element = get_browser().find(element, timeout=0)
+  File "d:\demo_golem\env\lib\site-packages\golem\webdriver\extended_driver.py", line 178, in find
+    xpath, tag_name, timeout, wait_displayed, highlight)
+  File "d:\demo_golem\env\lib\site-packages\golem\webdriver\common.py", line 131, in _find
+    timeout, wait_displayed, highlight)
+  File "d:\demo_golem\env\lib\site-packages\golem\webdriver\common.py", line 47, in _find_webelement
+    .format(element_name, selector_type, selector_value))
+golem.core.exceptions.ElementNotFound: Element Account name not found using selector xpath:'.//*[@class="account"]/span'
+10:43:53.315 INFO Test Result: CODE ERROR
+10:43:53.319 INFO _____________Sing out and check_______________

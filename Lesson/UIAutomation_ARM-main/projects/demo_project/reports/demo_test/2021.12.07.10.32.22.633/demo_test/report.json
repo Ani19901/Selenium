@@ -1,0 +1,78 @@
+[
+    {
+        "test_file": "demo_test",
+        "test": "test",
+        "set_name": "",
+        "environment": "testenv",
+        "result": "success",
+        "description": "\n \nasdasdas",
+        "browser": "chrome",
+        "test_data": {
+            "env": "{'url': 'http://automationpractice.com/index.php?controller=authentication&back=my-account', 'users': {'user_for_demo': {'user_login': 'golem_demo@mailinator.com', 'user_pswd': 'Volo2020', 'user_name': 'Golem Demo'}, 'second_user_for_demo': {'user_login': 'golem_demo_2@mailinator.com', 'user_pswd': 'Volo2020', 'user_name': 'sGolem Demo'}}, 'name': 'testenv'}",
+            "url": "'http://automationpractice.com/index.php?controller=authentication&back=my-account'",
+            "login_name": "'golem_demo@mailinator.com'",
+            "user_pass": "'Volo2020'",
+            "account_name": "'Golem Demo'"
+        },
+        "steps": [
+            {
+                "message": "_____________Navigation_______________",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Navigate to: 'http://automationpractice.com/index.php?controller=authentication&back=my-account'",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "_____________Sign in_______________",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Wait for element ('xpath', './/*[@id=\"email\"]', 'Email address input') to be present",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Write 'golem_demo@mailinator.com' in element Email address input",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Wait for element ('xpath', './/*[@id=\"passwd\"]', 'Password input input') to be present",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Write 'Volo2020' in element Password input input",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Wait for element ('xpath', './/*[@id=\"SubmitLogin\"]', 'Sign in button') to be present",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Click Sign in button",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "_____________Assert account name_______________",
+                "screenshot": null,
+                "error": null
+            },
+            {
+                "message": "Assert element Account name text is 'Golem Demo'",
+                "screenshot": null,
+                "error": null
+            }
+        ],
+        "errors": [],
+        "elapsed_time": 22.49,
+        "timestamp": "2021.12.07.10.32.24.136"
+    }
+]

@@ -1,0 +1,96 @@
+2021-12-07 10:15:11,235 root INFO Test execution started: demo_test
+2021-12-07 10:15:11,236 root INFO Browser: chrome
+2021-12-07 10:15:11,237 root INFO Environment: testenv
+2021-12-07 10:15:11,237 root INFO Using data:
+    url: http://automationpractice.com/index.php?controller=authentication&back=my-account
+2021-12-07 10:15:11,243 root INFO Store value 'http://automationpractice.com/index.php?controller=authentication&back=my-account' in key 'url'
+2021-12-07 10:15:11,244 root INFO Store value 'golem_demo@mailinator.com' in key 'login_name'
+2021-12-07 10:15:11,245 root INFO Store value 'Volo2020' in key 'user_pass'
+2021-12-07 10:15:11,246 root INFO Store value 'Golem Demo' in key 'account_name'
+2021-12-07 10:15:11,247 root INFO Test started: test
+2021-12-07 10:15:11,249 root INFO _____________Navigation_______________
+2021-12-07 10:15:11,250 root INFO Navigate to: 'http://automationpractice.com/index.php?controller=authentication&back=my-account'
+2021-12-07 10:15:11,818 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:58307/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": ["start-maximized"]}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": ["start-maximized"]}}}
+2021-12-07 10:15:11,819 urllib3.connectionpool DEBUG Starting new HTTP connection (1): 127.0.0.1:58307
+2021-12-07 10:15:12,698 urllib3.connectionpool DEBUG http://127.0.0.1:58307 "POST /session HTTP/1.1" 200 793
+2021-12-07 10:15:12,698 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:15:12,698 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:58307/session/88464e6420a93f96233a3ac2b3631758/window/maximize {}
+2021-12-07 10:15:12,704 urllib3.connectionpool DEBUG http://127.0.0.1:58307 "POST /session/88464e6420a93f96233a3ac2b3631758/window/maximize HTTP/1.1" 200 52
+2021-12-07 10:15:12,704 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:15:12,705 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:58307/session/88464e6420a93f96233a3ac2b3631758/url {"url": "http://automationpractice.com/index.php?controller=authentication&back=my-account"}
+2021-12-07 10:15:17,393 urllib3.connectionpool DEBUG http://127.0.0.1:58307 "POST /session/88464e6420a93f96233a3ac2b3631758/url HTTP/1.1" 200 14
+2021-12-07 10:15:17,393 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:15:17,393 root INFO _____________Sign in_______________
+2021-12-07 10:15:17,394 root INFO Wait for element ('xpath', './/*[@id="email"]', 'Email address input') to be present
+2021-12-07 10:15:17,394 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:58307/session/88464e6420a93f96233a3ac2b3631758/element {"using": "xpath", "value": ".//*[@id=\"email\"]"}
+2021-12-07 10:15:17,411 urllib3.connectionpool DEBUG http://127.0.0.1:58307 "POST /session/88464e6420a93f96233a3ac2b3631758/element HTTP/1.1" 200 88
+2021-12-07 10:15:17,411 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:15:17,411 root DEBUG Element found
+2021-12-07 10:15:17,412 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:58307/session/88464e6420a93f96233a3ac2b3631758/element {"using": "xpath", "value": ".//*[@id=\"email\"]"}
+2021-12-07 10:15:17,416 urllib3.connectionpool DEBUG http://127.0.0.1:58307 "POST /session/88464e6420a93f96233a3ac2b3631758/element HTTP/1.1" 200 88
+2021-12-07 10:15:17,417 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:15:17,417 root DEBUG Element found
+2021-12-07 10:15:17,417 root INFO Write 'golem_demo@mailinator.com' in element Email address input
+2021-12-07 10:15:17,417 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:58307/session/88464e6420a93f96233a3ac2b3631758/element/4f3f3609-5c12-4e69-926e-f769114a1d77/value {"text": "golem_demo@mailinator.com", "value": ["g", "o", "l", "e", "m", "_", "d", "e", "m", "o", "@", "m", "a", "i", "l", "i", "n", "a", "t", "o", "r", ".", "c", "o", "m"], "id": "4f3f3609-5c12-4e69-926e-f769114a1d77"}
+2021-12-07 10:15:17,499 urllib3.connectionpool DEBUG http://127.0.0.1:58307 "POST /session/88464e6420a93f96233a3ac2b3631758/element/4f3f3609-5c12-4e69-926e-f769114a1d77/value HTTP/1.1" 200 14
+2021-12-07 10:15:17,500 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:15:17,501 root INFO Wait for element ('xpath', './/*[@id="passwd"]', 'Password input input') to be present
+2021-12-07 10:15:17,501 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:58307/session/88464e6420a93f96233a3ac2b3631758/element {"using": "xpath", "value": ".//*[@id=\"passwd\"]"}
+2021-12-07 10:15:17,524 urllib3.connectionpool DEBUG http://127.0.0.1:58307 "POST /session/88464e6420a93f96233a3ac2b3631758/element HTTP/1.1" 200 88
+2021-12-07 10:15:17,524 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:15:17,524 root DEBUG Element found
+2021-12-07 10:15:17,525 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:58307/session/88464e6420a93f96233a3ac2b3631758/element {"using": "xpath", "value": ".//*[@id=\"passwd\"]"}
+2021-12-07 10:15:17,532 urllib3.connectionpool DEBUG http://127.0.0.1:58307 "POST /session/88464e6420a93f96233a3ac2b3631758/element HTTP/1.1" 200 88
+2021-12-07 10:15:17,532 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:15:17,532 root DEBUG Element found
+2021-12-07 10:15:17,532 root INFO Write 'Volo2020' in element Password input input
+2021-12-07 10:15:17,533 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:58307/session/88464e6420a93f96233a3ac2b3631758/element/73c838b0-8fac-4282-a47d-a98fc8e3d34f/value {"text": "Volo2020", "value": ["V", "o", "l", "o", "2", "0", "2", "0"], "id": "73c838b0-8fac-4282-a47d-a98fc8e3d34f"}
+2021-12-07 10:15:17,594 urllib3.connectionpool DEBUG http://127.0.0.1:58307 "POST /session/88464e6420a93f96233a3ac2b3631758/element/73c838b0-8fac-4282-a47d-a98fc8e3d34f/value HTTP/1.1" 200 14
+2021-12-07 10:15:17,594 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:15:17,594 root INFO Wait for element ('xpath', './/*[@id="SubmitLogin"]', 'Sign in button') to be present
+2021-12-07 10:15:17,595 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:58307/session/88464e6420a93f96233a3ac2b3631758/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:15:17,606 urllib3.connectionpool DEBUG http://127.0.0.1:58307 "POST /session/88464e6420a93f96233a3ac2b3631758/element HTTP/1.1" 200 88
+2021-12-07 10:15:17,607 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:15:17,607 root DEBUG Element found
+2021-12-07 10:15:17,607 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:58307/session/88464e6420a93f96233a3ac2b3631758/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:15:17,614 urllib3.connectionpool DEBUG http://127.0.0.1:58307 "POST /session/88464e6420a93f96233a3ac2b3631758/element HTTP/1.1" 200 88
+2021-12-07 10:15:17,614 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:15:17,614 root DEBUG Element found
+2021-12-07 10:15:17,614 root INFO Click Sign in button
+2021-12-07 10:15:17,615 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:58307/session/88464e6420a93f96233a3ac2b3631758/element/314e3538-e669-498e-95fa-4b1a2c7917d1/click {"id": "314e3538-e669-498e-95fa-4b1a2c7917d1"}
+2021-12-07 10:15:19,327 urllib3.connectionpool DEBUG http://127.0.0.1:58307 "POST /session/88464e6420a93f96233a3ac2b3631758/element/314e3538-e669-498e-95fa-4b1a2c7917d1/click HTTP/1.1" 200 14
+2021-12-07 10:15:19,327 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:15:19,328 root INFO _____________Assert account name_______________
+2021-12-07 10:15:19,328 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:58307/session/88464e6420a93f96233a3ac2b3631758/element {"using": "xpath", "value": ".//*[@class=\"account\"]/span"}
+2021-12-07 10:15:19,350 urllib3.connectionpool DEBUG http://127.0.0.1:58307 "POST /session/88464e6420a93f96233a3ac2b3631758/element HTTP/1.1" 200 88
+2021-12-07 10:15:19,351 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:15:19,351 root DEBUG Element found
+2021-12-07 10:15:19,351 root INFO Assert element Account name text is 'Golem Demo'
+2021-12-07 10:15:19,351 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:58307/session/88464e6420a93f96233a3ac2b3631758/element/c74cd4ac-66c1-434e-afbb-24768f878ec9/text {"id": "c74cd4ac-66c1-434e-afbb-24768f878ec9"}
+2021-12-07 10:15:19,363 urllib3.connectionpool DEBUG http://127.0.0.1:58307 "GET /session/88464e6420a93f96233a3ac2b3631758/element/c74cd4ac-66c1-434e-afbb-24768f878ec9/text HTTP/1.1" 200 22
+2021-12-07 10:15:19,364 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:15:19,364 selenium.webdriver.remote.remote_connection DEBUG GET http://127.0.0.1:58307/session/88464e6420a93f96233a3ac2b3631758/element/c74cd4ac-66c1-434e-afbb-24768f878ec9/text {"id": "c74cd4ac-66c1-434e-afbb-24768f878ec9"}
+2021-12-07 10:15:19,372 urllib3.connectionpool DEBUG http://127.0.0.1:58307 "GET /session/88464e6420a93f96233a3ac2b3631758/element/c74cd4ac-66c1-434e-afbb-24768f878ec9/text HTTP/1.1" 200 22
+2021-12-07 10:15:19,372 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:15:19,372 root INFO Test Result: SUCCESS
+2021-12-07 10:15:19,374 root INFO _____________Sing out and check_______________
+2021-12-07 10:15:19,374 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:58307/session/88464e6420a93f96233a3ac2b3631758/element {"using": "xpath", "value": ".//*[@class=\"logout\"]"}
+2021-12-07 10:15:19,384 urllib3.connectionpool DEBUG http://127.0.0.1:58307 "POST /session/88464e6420a93f96233a3ac2b3631758/element HTTP/1.1" 200 88
+2021-12-07 10:15:19,384 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:15:19,385 root DEBUG Element found
+2021-12-07 10:15:19,385 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:58307/session/88464e6420a93f96233a3ac2b3631758/element {"using": "xpath", "value": ".//*[@class=\"logout\"]"}
+2021-12-07 10:15:19,391 urllib3.connectionpool DEBUG http://127.0.0.1:58307 "POST /session/88464e6420a93f96233a3ac2b3631758/element HTTP/1.1" 200 88
+2021-12-07 10:15:19,391 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:15:19,391 root DEBUG Element found
+2021-12-07 10:15:19,391 root INFO Click Logout button
+2021-12-07 10:15:19,392 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:58307/session/88464e6420a93f96233a3ac2b3631758/element/d30f80b6-b41c-47b4-abb8-3a4678aed106/click {"id": "d30f80b6-b41c-47b4-abb8-3a4678aed106"}
+2021-12-07 10:15:21,872 urllib3.connectionpool DEBUG http://127.0.0.1:58307 "POST /session/88464e6420a93f96233a3ac2b3631758/element/d30f80b6-b41c-47b4-abb8-3a4678aed106/click HTTP/1.1" 200 14
+2021-12-07 10:15:21,873 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:15:21,873 root INFO Wait for element ('xpath', './/*[@id="SubmitLogin"]', 'Sign in button') to be present
+2021-12-07 10:15:21,874 selenium.webdriver.remote.remote_connection DEBUG POST http://127.0.0.1:58307/session/88464e6420a93f96233a3ac2b3631758/element {"using": "xpath", "value": ".//*[@id=\"SubmitLogin\"]"}
+2021-12-07 10:15:21,882 urllib3.connectionpool DEBUG http://127.0.0.1:58307 "POST /session/88464e6420a93f96233a3ac2b3631758/element HTTP/1.1" 200 88
+2021-12-07 10:15:21,882 selenium.webdriver.remote.remote_connection DEBUG Finished Request
+2021-12-07 10:15:21,882 root DEBUG Element found
+2021-12-07 10:15:21,883 selenium.webdriver.remote.remote_connection DEBUG DELETE http://127.0.0.1:58307/session/88464e6420a93f96233a3ac2b3631758 {}
+2021-12-07 10:15:22,194 urllib3.connectionpool DEBUG http://127.0.0.1:58307 "DELETE /session/88464e6420a93f96233a3ac2b3631758 HTTP/1.1" 200 14
+2021-12-07 10:15:22,194 selenium.webdriver.remote.remote_connection DEBUG Finished Request

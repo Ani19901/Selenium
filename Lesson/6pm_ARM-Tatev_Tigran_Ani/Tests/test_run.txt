@@ -1,0 +1,47 @@
+1639984303.083060 - INFO - 
+
+1639984303.084047 - INFO - ====== WebDriver manager ======
+1639984303.140018 - INFO - Current google-chrome version is 96.0.4664
+1639984303.140018 - INFO - Get LATEST chromedriver version for 96.0.4664 google-chrome
+1639984303.662563 - INFO - Trying to download new driver from https://chromedriver.storage.googleapis.com/96.0.4664.45/chromedriver_win32.zip
+1639984306.025254 - INFO - Driver has been saved in cache [C:\Users\Ani\.wdm\drivers\chromedriver\win32\96.0.4664.45]
+1639984312.800059 - INFO - Opening websites home page
+1639984317.301996 - INFO - Trying to click login
+1639984322.564342 - INFO - Validation Message is - You are logged in as automation20225@gmail.com
+1639984332.122983 - INFO - Found elements quantity - '32'
+1639985269.346530 - INFO - 
+
+1639985269.347528 - INFO - ====== WebDriver manager ======
+1639985269.398873 - INFO - Current google-chrome version is 96.0.4664
+1639985269.398873 - INFO - Get LATEST chromedriver version for 96.0.4664 google-chrome
+1639985269.912956 - INFO - Driver [C:\Users\Ani\.wdm\drivers\chromedriver\win32\96.0.4664.45\chromedriver.exe] found in cache
+1639985276.058307 - INFO - Opening websites home page
+1639985276.800327 - INFO - Trying to click login
+1639985285.994669 - INFO - Validation Message is - You are logged in as automation20225@gmail.com
+1639985295.297805 - INFO - Found elements quantity - '0'
+1639995286.214032 - INFO - 
+
+1639995286.215030 - INFO - ====== WebDriver manager ======
+1639995286.233144 - INFO - Current google-chrome version is 96.0.4664
+1639995286.233144 - INFO - Get LATEST chromedriver version for 96.0.4664 google-chrome
+1639995286.692880 - INFO - Driver [C:\Users\Ani\.wdm\drivers\chromedriver\win32\96.0.4664.45\chromedriver.exe] found in cache
+1639995290.621419 - INFO - Opening websites home page
+1639995293.918556 - INFO - Trying to click login
+1639995298.113027 - INFO - Validation Message is - You are logged in as automation20225@gmail.com
+1639995303.047766 - INFO - Found elements quantity - '0'
+1639995500.253093 - INFO - 
+
+1639995500.253093 - INFO - ====== WebDriver manager ======
+1639995500.274949 - INFO - Current google-chrome version is 96.0.4664
+1639995500.274949 - INFO - Get LATEST chromedriver version for 96.0.4664 google-chrome
+1639995500.682508 - INFO - Driver [C:\Users\Ani\.wdm\drivers\chromedriver\win32\96.0.4664.45\chromedriver.exe] found in cache
+1639995506.729719 - INFO - Opening websites home page
+1639995510.026430 - INFO - Trying to click login
+1639995513.267598 - INFO - Validation Message is - You are logged in as automation20225@gmail.com
+1639995516.800657 - INFO - Found elements quantity - '0'
+1639995518.378246 - INFO - Opening websites home page
+1639995518.739553 - INFO - Trying to click login
+1639995530.881994 - INFO - Opening websites home page
+1639995531.389389 - INFO - Trying to click login
+1639995542.641985 - INFO - Opening websites home page
+1639995543.065857 - INFO - Trying to click login

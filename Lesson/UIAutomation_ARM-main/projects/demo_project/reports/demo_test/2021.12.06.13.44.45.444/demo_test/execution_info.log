@@ -1,0 +1,27 @@
+13:44:47.241 INFO Test execution started: demo_test
+13:44:47.245 INFO Browser: chrome
+13:44:47.247 INFO Environment: testenv
+13:44:47.248 INFO Using data:
+    url: http://automationpractice.com/index.php?controller=authentication&back=my-account
+13:44:47.254 INFO Store value 'http://automationpractice.com/index.php?controller=authentication&back=my-account' in key 'url'
+13:44:47.255 INFO Store value 'golem_demo@mailinator.com' in key 'login_name'
+13:44:47.255 INFO Store value 'Volo2020' in key 'user_pass'
+13:44:47.256 INFO Store value 'Golem Demo' in key 'account_name'
+13:44:47.256 INFO Test started: test
+13:44:47.257 INFO _____________Navigation_______________
+13:44:47.258 INFO Navigate to: 'http://automationpractice.com/index.php?controller=authentication&back=my-account'
+13:44:52.810 INFO _____________Sign in_______________
+13:44:52.812 INFO Wait for element ('xpath', './/*[@id="email"]', 'Email address input') to be present
+13:44:52.852 INFO Write 'golem_demo@mailinator.com' in element Email address input
+13:44:52.953 INFO Wait for element ('xpath', './/*[@id="passwd"]', 'Password input input') to be present
+13:44:52.974 INFO Write 'Volo2020' in element Password input input
+13:44:53.036 INFO Wait for element ('xpath', './/*[@id="SubmitLogin"]', 'Sign in button') to be present
+13:44:53.055 INFO Click Sign in button
+13:44:55.860 INFO _____________Assert account name_______________
+13:44:55.875 INFO Verify element Account name text is 'aaa'
+13:44:55.902 ERROR expected element Account name text to be 'aaa' but was 'Golem Demo'
+13:44:56.181 INFO Test Result: ERROR
+13:44:56.183 INFO _____________Sing out and check_______________
+13:44:56.184 INFO Wait for element ('xpath', './/*[@class="logout"]', 'Logout button') to be present
+13:44:56.203 INFO Click Logout button
+13:44:59.301 INFO Wait for element ('xpath', './/*[@id="SubmitLogin"]', 'Sign in button') to be present

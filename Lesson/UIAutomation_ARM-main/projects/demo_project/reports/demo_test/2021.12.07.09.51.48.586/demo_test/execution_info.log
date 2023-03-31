@@ -1,0 +1,25 @@
+09:51:50.433 INFO Test execution started: demo_test
+09:51:50.434 INFO Browser: chrome
+09:51:50.435 INFO Environment: testenv
+09:51:50.435 INFO Using data:
+    url: http://automationpractice.com/index.php?controller=authentication&back=my-account
+09:51:50.439 INFO Store value 'http://automationpractice.com/index.php?controller=authentication&back=my-account' in key 'url'
+09:51:50.443 INFO Store value 'golem_demo@mailinator.com' in key 'login_name'
+09:51:50.444 INFO Store value 'Volo2020' in key 'user_pass'
+09:51:50.444 INFO Store value 'Golem Demo' in key 'account_name'
+09:51:50.445 INFO Test started: test
+09:51:50.447 INFO _____________Navigation_______________
+09:51:50.447 INFO Navigate to: 'http://automationpractice.com/index.php?controller=authentication&back=my-account'
+09:51:55.392 INFO _____________Sign in_______________
+09:51:55.393 INFO Wait for element ('xpath', './/*[@id="email"]', 'Email address input') to be present
+09:51:55.420 INFO Write 'golem_demo@mailinator.com' in element Email address input
+09:51:55.528 INFO Wait for element ('xpath', './/*[@id="passwd"]', 'Password input input') to be present
+09:51:55.549 INFO Write 'Volo2020' in element Password input input
+09:51:55.610 INFO Wait for element ('xpath', './/*[@id="SubmitLogin"]', 'Sign in button') to be present
+09:51:55.629 INFO Click Sign in button
+09:51:57.239 INFO _____________Assert account name_______________
+09:51:57.259 INFO Assert element Account name text is 'Golem Demo'
+09:51:57.290 INFO Test Result: SUCCESS
+09:51:57.292 INFO _____________Sing out and check_______________
+09:51:57.310 INFO Click Logout button
+09:51:59.519 INFO Wait for element ('xpath', './/*[@id="SubmitLogin"]', 'Sign in button') to be present

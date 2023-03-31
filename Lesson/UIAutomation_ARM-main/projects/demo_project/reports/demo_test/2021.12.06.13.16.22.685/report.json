@@ -1,0 +1,138 @@
+{
+    "tests": [
+        {
+            "test_file": "demo_test",
+            "test": "test",
+            "set_name": "56968d",
+            "environment": "testenv",
+            "result": "success",
+            "description": "\n \n",
+            "browser": "firefox",
+            "test_data": {
+                "env": "{'url': 'http://automationpractice.com/index.php?controller=authentication&back=my-account', 'users': {'user_for_demo': {'user_login': 'golem_demo@mailinator.com', 'user_pswd': 'Volo2020', 'user_name': 'Golem Demo'}, 'second_user_for_demo': {'user_login': 'golem_demo_2@mailinator.com', 'user_pswd': 'Volo2020', 'user_name': 'sGolem Demo'}}, 'name': 'testenv'}",
+                "url": "'http://automationpractice.com/index.php?controller=authentication&back=my-account'",
+                "login_name": "'golem_demo@mailinator.com'",
+                "user_pass": "'Volo2020'"
+            },
+            "steps": [
+                {
+                    "message": "Navigate to: 'http://automationpractice.com/index.php?controller=authentication&back=my-account'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Wait for element ('xpath', './/*[@id=\"email\"]', 'Email address input') to be present",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Write 'golem_demo@mailinator.com' in element Email address input",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Wait for element ('xpath', './/*[@id=\"passwd\"]', 'Password input input') to be present",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Write 'Volo2020' in element Password input input",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Wait for element ('xpath', './/*[@id=\"SubmitLogin\"]', 'Sign in btn') to be present",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click Sign in btn",
+                    "screenshot": null,
+                    "error": null
+                }
+            ],
+            "errors": [],
+            "elapsed_time": 14.41,
+            "timestamp": "2021.12.06.13.16.35.826"
+        },
+        {
+            "test_file": "demo_test",
+            "test": "test",
+            "set_name": "d35429",
+            "environment": "testenv",
+            "result": "success",
+            "description": "\n \n",
+            "browser": "chrome",
+            "test_data": {
+                "env": "{'url': 'http://automationpractice.com/index.php?controller=authentication&back=my-account', 'users': {'user_for_demo': {'user_login': 'golem_demo@mailinator.com', 'user_pswd': 'Volo2020', 'user_name': 'Golem Demo'}, 'second_user_for_demo': {'user_login': 'golem_demo_2@mailinator.com', 'user_pswd': 'Volo2020', 'user_name': 'sGolem Demo'}}, 'name': 'testenv'}",
+                "url": "'http://automationpractice.com/index.php?controller=authentication&back=my-account'",
+                "login_name": "'golem_demo@mailinator.com'",
+                "user_pass": "'Volo2020'"
+            },
+            "steps": [
+                {
+                    "message": "Navigate to: 'http://automationpractice.com/index.php?controller=authentication&back=my-account'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Wait for element ('xpath', './/*[@id=\"email\"]', 'Email address input') to be present",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Write 'golem_demo@mailinator.com' in element Email address input",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Wait for element ('xpath', './/*[@id=\"passwd\"]', 'Password input input') to be present",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Write 'Volo2020' in element Password input input",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Wait for element ('xpath', './/*[@id=\"SubmitLogin\"]', 'Sign in btn') to be present",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Click Sign in btn",
+                    "screenshot": null,
+                    "error": null
+                }
+            ],
+            "errors": [],
+            "elapsed_time": 8.02,
+            "timestamp": "2021.12.06.13.16.25.204"
+        }
+    ],
+    "params": {
+        "browsers": [
+            {
+                "name": "chrome",
+                "capabilities": {}
+            },
+            {
+                "name": "firefox",
+                "capabilities": {}
+            }
+        ],
+        "processes": 1,
+        "environments": [
+            "testenv"
+        ],
+        "tags": [],
+        "remote_url": ""
+    },
+    "total_tests": 2,
+    "totals_by_result": {
+        "success": 2
+    },
+    "net_elapsed_time": 26.4,
+    "has_finished": true
+}

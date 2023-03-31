@@ -1,0 +1,37 @@
+13:43:52.987 INFO Test execution started: demo_test
+13:43:52.987 INFO Browser: chrome
+13:43:52.988 INFO Environment: testenv
+13:43:52.988 INFO Using data:
+    url: http://automationpractice.com/index.php?controller=authentication&back=my-account
+13:43:52.992 INFO Store value 'http://automationpractice.com/index.php?controller=authentication&back=my-account' in key 'url'
+13:43:52.993 INFO Store value 'golem_demo@mailinator.com' in key 'login_name'
+13:43:52.994 INFO Store value 'Volo2020' in key 'user_pass'
+13:43:52.994 INFO Store value 'Golem Demo' in key 'account_name'
+13:43:52.995 INFO Test started: test
+13:43:52.996 INFO _____________Navigation_______________
+13:43:52.996 INFO Navigate to: 'http://automationpractice.com/index.php?controller=authentication&back=my-account'
+13:43:58.682 INFO _____________Sign in_______________
+13:43:58.683 INFO Wait for element ('xpath', './/*[@id="email"]', 'Email address input') to be present
+13:43:58.706 INFO Write 'golem_demo@mailinator.com' in element Email address input
+13:43:58.784 INFO Wait for element ('xpath', './/*[@id="passwd"]', 'Password input input') to be present
+13:43:58.803 INFO Write 'Volo2020' in element Password input input
+13:43:58.880 INFO Wait for element ('xpath', './/*[@id="SubmitLogin"]', 'Sign in button') to be present
+13:43:58.903 INFO Click Sign in button
+13:44:01.782 INFO _____________Assert account name_______________
+13:44:01.800 INFO Assert element Account name text is 'aaa'
+13:44:01.824 ERROR AssertionError: expected element Account name text to be 'aaa' but was 'Golem Demo'
+Traceback (most recent call last):
+  File "d:\demo_golem\env\lib\site-packages\golem\test_runner\test_runner.py", line 202, in run_test_function
+    f(execution.data)
+  File "D:\demo_golem\lesson10\projects\demo_project\tests\demo_test.py", line 28, in test
+    account.assert_account_name('aaa')
+  File "D:\demo_golem\lesson10\projects\demo_project\pages\account.py", line 9, in assert_account_name
+    actions.assert_element_text(account_name_span, name)
+  File "d:\demo_golem\env\lib\site-packages\golem\actions.py", line 560, in assert_element_text
+    assert element.text == text, msg
+AssertionError: expected element Account name text to be 'aaa' but was 'Golem Demo'
+13:44:02.152 INFO Test Result: FAILURE
+13:44:02.155 INFO _____________Sing out and check_______________
+13:44:02.156 INFO Wait for element ('xpath', './/*[@class="logout"]', 'Logout button') to be present
+13:44:02.173 INFO Click Logout button
+13:44:05.134 INFO Wait for element ('xpath', './/*[@id="SubmitLogin"]', 'Sign in button') to be present

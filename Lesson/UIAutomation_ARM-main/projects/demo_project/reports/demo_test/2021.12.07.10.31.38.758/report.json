@@ -1,0 +1,78 @@
+{
+    "tests": [
+        {
+            "test_file": "demo_test",
+            "test": "test",
+            "set_name": "",
+            "environment": "testenv",
+            "result": "code error",
+            "description": "\n \nasdasdas",
+            "browser": "chrome",
+            "test_data": {
+                "env": "{'url': 'http://automationpractice.com/index.php?controller=authentication&back=my-account', 'users': {'user_for_demo': {'user_login': 'golem_demo@mailinator.com', 'user_pswd': 'Volo2020', 'user_name': 'Golem Demo'}, 'second_user_for_demo': {'user_login': 'golem_demo_2@mailinator.com', 'user_pswd': 'Volo2020', 'user_name': 'sGolem Demo'}}, 'name': 'testenv'}",
+                "url": "'http://automationpractice.com/index.php?controller=authentication&back=my-account'",
+                "login_name": "'golem_demo@mailinator.com'",
+                "user_pass": "'Volo2020'",
+                "account_name": "'Golem Demo'"
+            },
+            "steps": [
+                {
+                    "message": "_____________Navigation_______________",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Navigate to: 'http://automationpractice.com/index.php?controller=authentication&back=my-account'",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "_____________Sign in_______________",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Wait for element ('xpath', './/*[@id=\"email\"]', 'Email address input') to be present",
+                    "screenshot": null,
+                    "error": null
+                },
+                {
+                    "message": "Error",
+                    "screenshot": "Error_37da1.png",
+                    "error": {
+                        "message": "TimeoutException: Message: timeout waiting for element ('xpath', './/*[@id=\"email\"]', 'Email address input') to be present\n",
+                        "description": "Traceback (most recent call last):\n  File \"d:\\demo_golem\\env\\lib\\site-packages\\golem\\webdriver\\extended_driver.py\", line 422, in wait_for_element_present\n    self.find(element, timeout=timeout, wait_displayed=False)\n  File \"d:\\demo_golem\\env\\lib\\site-packages\\golem\\webdriver\\extended_driver.py\", line 178, in find\n    xpath, tag_name, timeout, wait_displayed, highlight)\n  File \"d:\\demo_golem\\env\\lib\\site-packages\\golem\\webdriver\\common.py\", line 131, in _find\n    timeout, wait_displayed, highlight)\n  File \"d:\\demo_golem\\env\\lib\\site-packages\\golem\\webdriver\\common.py\", line 47, in _find_webelement\n    .format(element_name, selector_type, selector_value))\ngolem.core.exceptions.ElementNotFound: Element Email address input not found using selector xpath:'.//*[@id=\"email\"]'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"d:\\demo_golem\\env\\lib\\site-packages\\golem\\test_runner\\test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"D:\\demo_golem\\lesson11\\projects\\demo_project\\tests\\demo_test.py\", line 24, in test\n    sign_in.login_as_a_user_by_name_and_pass(data.login_name, data.user_pass)\n  File \"D:\\demo_golem\\lesson11\\projects\\demo_project\\pages\\sign_in.py\", line 9, in login_as_a_user_by_name_and_pass\n    actions.wait_for_element_present(email_address_input, 5)\n  File \"d:\\demo_golem\\env\\lib\\site-packages\\golem\\actions.py\", line 2569, in wait_for_element_present\n    get_browser().wait_for_element_present(element, timeout)\n  File \"d:\\demo_golem\\env\\lib\\site-packages\\golem\\webdriver\\extended_driver.py\", line 426, in wait_for_element_present\n    raise TimeoutException(message)\nselenium.common.exceptions.TimeoutException: Message: timeout waiting for element ('xpath', './/*[@id=\"email\"]', 'Email address input') to be present"
+                    }
+                }
+            ],
+            "errors": [
+                {
+                    "message": "TimeoutException: Message: timeout waiting for element ('xpath', './/*[@id=\"email\"]', 'Email address input') to be present\n",
+                    "description": "Traceback (most recent call last):\n  File \"d:\\demo_golem\\env\\lib\\site-packages\\golem\\webdriver\\extended_driver.py\", line 422, in wait_for_element_present\n    self.find(element, timeout=timeout, wait_displayed=False)\n  File \"d:\\demo_golem\\env\\lib\\site-packages\\golem\\webdriver\\extended_driver.py\", line 178, in find\n    xpath, tag_name, timeout, wait_displayed, highlight)\n  File \"d:\\demo_golem\\env\\lib\\site-packages\\golem\\webdriver\\common.py\", line 131, in _find\n    timeout, wait_displayed, highlight)\n  File \"d:\\demo_golem\\env\\lib\\site-packages\\golem\\webdriver\\common.py\", line 47, in _find_webelement\n    .format(element_name, selector_type, selector_value))\ngolem.core.exceptions.ElementNotFound: Element Email address input not found using selector xpath:'.//*[@id=\"email\"]'\n\nDuring handling of the above exception, another exception occurred:\n\nTraceback (most recent call last):\n  File \"d:\\demo_golem\\env\\lib\\site-packages\\golem\\test_runner\\test_runner.py\", line 202, in run_test_function\n    f(execution.data)\n  File \"D:\\demo_golem\\lesson11\\projects\\demo_project\\tests\\demo_test.py\", line 24, in test\n    sign_in.login_as_a_user_by_name_and_pass(data.login_name, data.user_pass)\n  File \"D:\\demo_golem\\lesson11\\projects\\demo_project\\pages\\sign_in.py\", line 9, in login_as_a_user_by_name_and_pass\n    actions.wait_for_element_present(email_address_input, 5)\n  File \"d:\\demo_golem\\env\\lib\\site-packages\\golem\\actions.py\", line 2569, in wait_for_element_present\n    get_browser().wait_for_element_present(element, timeout)\n  File \"d:\\demo_golem\\env\\lib\\site-packages\\golem\\webdriver\\extended_driver.py\", line 426, in wait_for_element_present\n    raise TimeoutException(message)\nselenium.common.exceptions.TimeoutException: Message: timeout waiting for element ('xpath', './/*[@id=\"email\"]', 'Email address input') to be present"
+                }
+            ],
+            "elapsed_time": 7.22,
+            "timestamp": "2021.12.07.10.31.40.466"
+        }
+    ],
+    "params": {
+        "browsers": [
+            {
+                "name": "chrome",
+                "capabilities": {}
+            }
+        ],
+        "processes": 1,
+        "environments": [
+            "testenv"
+        ],
+        "tags": [],
+        "remote_url": ""
+    },
+    "total_tests": 1,
+    "totals_by_result": {
+        "code error": 1
+    },
+    "net_elapsed_time": 10.78,
+    "has_finished": true
+}

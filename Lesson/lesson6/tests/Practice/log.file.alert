@@ -1,0 +1,14 @@
+2021-11-24 11:30:09 - INFO - Get Pop up text
+2021-11-24 11:30:09 - INFO - Click on the 'Show' button
+2021-11-24 11:30:09 - INFO - Click on the 'Hide' button
+2021-11-24 11:30:09 - INFO - Get attribute of the 'Hide/Show Example' field
+2021-11-24 11:30:09 - INFO - Select 'Top' of MouseHover
+2021-11-24 11:30:09 - INFO - Get footer text
+2021-11-24 11:30:09 - INFO - Click on the 'Sign in' button
+2021-11-24 11:30:10 - INFO - Select email field
+2021-11-24 11:30:10 - INFO - Select password field
+2021-11-24 11:30:10 - INFO - Click on the 'Login' button
+2021-11-24 11:30:11 - INFO - Navigate to google
+2021-11-24 11:30:11 - INFO - Search 'Automation'
+2021-11-24 11:30:14 - INFO - Get Search result
+2021-11-24 11:30:14 - INFO - The data are written in the txt file
